@@ -1,13 +1,13 @@
-import { EllipsisVertical, Menu, Search, ShoppingCart } from "lucide-react";
+import { Menu, Search, ShoppingCart } from "lucide-react";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Select } from "./ui/select";
 
 import {
-  Drawer,
-  DrawerTrigger,
-  DrawerContent,
-  DrawerHeader,
+    Drawer,
+    DrawerContent,
+    DrawerHeader,
+    DrawerTrigger,
 } from "./ui/drawer";
 
 const Header = () => {

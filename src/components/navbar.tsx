@@ -1,10 +1,10 @@
-import { ChevronDown, EllipsisVertical, Headset, Menu, Phone } from "lucide-react";
+import { ChevronDown, EllipsisVertical, Headset, Menu } from "lucide-react";
 import { Button } from "./ui/button";
 import {
-  Drawer,
-  DrawerContent,
-  DrawerHeader,
-  DrawerTrigger,
+    Drawer,
+    DrawerContent,
+    DrawerHeader,
+    DrawerTrigger,
 } from "./ui/drawer";
 
 const Navbar = () => {
