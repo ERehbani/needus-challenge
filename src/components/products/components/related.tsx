@@ -1,8 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Heart, ShoppingCart } from "lucide-react";
+import { useState } from "react";
 
 const Related = () => {
+
   const relatedProducts = [
     {
       id: 1,
@@ -41,7 +43,7 @@ const Related = () => {
 
   return (
     <div className="my-20">
-      <h2 className="text-2xl font-bold mt-12 mb-6">Related Products</h2>
+      <h2 className="text-2xl mt-12 mb-6 text-center py-16">Related Products</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {relatedProducts.map((product) => (
           <Card
@@ -52,9 +54,9 @@ const Related = () => {
             <div className={`w-fit my-2 bg-green-500 text-white px-2 py-1 text-xs font-semibold rounded ${product.tag === "-10%" ? "bg-red-400" : product.tag === "HOT" ? "bg-yellow-400" : product.tag === "2 Years Warranty" && "bg-violet-400" }`} >
                 {product.tag}
               </div>
-              <button className=" bg-white p-2 rounded-full shadow-md hover:bg-gray-100 transition-colors">
+              <Button className=" bg-white size-10 rounded-full shadow-md hover:bg-gray-100 transition-colors">
                 <Heart className="w-5 h-5 text-gray-600" />
-              </button>
+              </Button>
             </div>
               <img
                 src={product.image}

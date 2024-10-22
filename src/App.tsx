@@ -22,13 +22,13 @@ export default function App() {
 
       {/* Main Content */}
       <div className="py-12 bg-gray-200 flex flex-col justify-center items-center">
+        <h2 className="text-3xl mb-8">TV COLLECTION</h2>
         <div className="text-sm breadcrumbs mb-4">
-          <span>HOME / PRODUCT / TV COLLECTION</span>
+          <span className="text-lg font-extralight">HOME / PRODUCT / TV COLLECTION</span>
         </div>
-        <h2 className="text-3xl font-bold mb-8">TV COLLECTION</h2>
       </div>
       <main className="container mx-auto px-4">
-        <div className="container mx-auto flex space-x-8 my-20 max-md:flex-col max-md:space-x-0">
+        <div className="container w-[85%] mx-auto flex space-x-8 my-20 max-lg:flex-col max-lg:space-x-0">
           {/* Product Images */}
 
           <Images />
