@@ -1,8 +1,8 @@
 import { Card, CardContent } from "@/components/ui/card";
-import detailProduct1 from "../../../../public/detailProduct1.png";
-import detailProduct2 from "../../../../public/detailProduct2.png";
-import detailProduct3 from "../../../../public/detailProduct3.png";
-import productImg from "../../../../public/productImg.png";
+import detailProduct1 from "/public/detailProduct1.png";
+import detailProduct2 from "/public/detailProduct2.png";
+import detailProduct3 from "/public/detailProduct3.png";
+import productImg from "/public/productImg.png";
 import { useState } from "react";
 
 const Images = () => {

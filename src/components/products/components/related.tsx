@@ -10,7 +10,7 @@ const Related = () => {
       price: 800.22,
       originalPrice: 1000.66,
       image:
-        "../../../../public/related1.png",
+        "/public/related1.png",
       tag: "NEW",
     },
     {
@@ -18,7 +18,7 @@ const Related = () => {
       name: "Mi P1 Smart Android HD TV",
       price: 400.0,
       originalPrice: 450.0,
-      image: "../../../../public/related2.png",
+      image: "/public/related2.png",
       tag: "-10%",
     },
     {
@@ -26,7 +26,7 @@ const Related = () => {
       name: "Konka OLED Android Tv",
       price: 700.0,
       originalPrice: 750.0,
-      image: "../../../../public/related3.png",
+      image: "/public/related3.png",
       tag: "HOT",
     },
     {
@@ -34,7 +34,7 @@ const Related = () => {
       name: "TCL Roku Android Tv",
       price: 800.0,
       originalPrice: 850.0,
-      image: "../../../../public/related4.png",
+      image: "/public/related4.png",
       tag: "2 Years Warranty",
     },
   ];
@@ -49,7 +49,7 @@ const Related = () => {
             className="relative rounded-lg overflow-hidden border-none">
             <CardContent className="bg-gray-100 p-4">
             <div className="flex justify-between">
-            <div className="w-fit my-2 bg-green-500 text-white px-2 py-1 text-xs font-semibold rounded">
+            <div className={`w-fit my-2 bg-green-500 text-white px-2 py-1 text-xs font-semibold rounded ${product.tag === "-10%" ? "bg-red-400" : product.tag === "HOT" ? "bg-yellow-400" : product.tag === "2 Years Warranty" && "bg-violet-400" }`} >
                 {product.tag}
               </div>
               <button className=" bg-white p-2 rounded-full shadow-md hover:bg-gray-100 transition-colors">
