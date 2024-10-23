@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Heart, ShoppingCart } from "lucide-react";
-import { useState } from "react";
 
 const Related = () => {
 
